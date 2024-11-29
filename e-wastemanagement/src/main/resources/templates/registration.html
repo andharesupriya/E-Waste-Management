@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" th:href="@{/css/signup.css}">
+
+<title>Insert title here</title>
+</head>
+<body>
+<div class="login">
+<form th:action="@{/signupsell}" th:object="${usersell}" method="post">
+<h3>Registration Form sell</h3>
+<br><br>
+<label>UserId</label><br>
+<input type="text" placeholder="enter the userid" name="idsell" required><br>
+
+<label>UserName</label><br>
+<input type="text" placeholder="enter the username" name="usernamesell" required><br>
+
+<label>Email</label><br>
+<input type="email" placeholder="enter the email" name="emailsell" required><br>
+
+<label>address</label><br>
+<input type="text" placeholder="enter the user  adress" name="adresssell" required><br>
+
+<label>Contact</label><br>
+<input type="text" placeholder="enter the user contact" name="contactsell" required maxlength="10"><br>
+
+<label>password</label><br>
+<input type="password" placeholder="enter the user password" name="passwordsell" required maxlength="8"><br>
+
+
+<div th:if="${otpwindow}">
+<label>Enter Otp</label>
+<input type="text" placeholder="enter the otp" name="otp" id="otp" required>
+</div>
+
+
+
+<div th:if="${fail}">
+<p th:text="${fail}"></p>
+</div>
+
+
+<input type="submit" value="submit">
+<div th:if="${susses}">
+<p th:text="${susses}"></p>
+</div>
+
+</form>
+</div>
+</center>
+
+</body>
+</html>

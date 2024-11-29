@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlnss:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" th:href="@{/css/signup.css}">
+
+<title>Insert title here</title>
+</head>
+<body>
+<div class="login">
+<form th:action="@{/signupcor}" th:object="${corsignup}" method="post">
+<h2>Corpraitive Login</h2><br><br>
+<label>Company Name</label><br><br>
+<label>Like colleges,industires,company etc..</label><br>
+<input type="text" placeholder="enter the Company Name" name="companyName" required><br>
+
+<label>Enter the Email</label><br>
+<input type="email" placeholder="enter the email" name="email" required><br>
+
+<label>Enter adress</label><br>
+<input type="text" placeholder="enter the adress" name="adress" required><br>
+
+<label>Enter Contact</label><br>
+<input type="text" placeholder="enter the contact" name="contact" required maxlength="10"><br>
+
+<label>Enter Password</label><br>
+<input type="password" placeholder="enter the password" name="password" required maxlength="8"><br>
+
+<div th:if="${otpwindow}">
+<label>Enter Otp</label><br>
+<input type="text" placeholder="enter the Otp" name="otp" required><br>
+</div>
+
+<div th:if="${fail}">
+<p th:text="${fail}"></p>
+</div>
+
+<div th:if="${susses}">
+<p th:text="${susses}"></p>
+</div>
+<input type="submit" value="submit">
+</form>
+</div>
+</body>
+</html>

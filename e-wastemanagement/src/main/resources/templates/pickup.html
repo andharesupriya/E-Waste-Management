@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<link rel="stylesheet" th:href="@{/css/signup.css}">
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div class="login">
+		<form th:action="@{/pickupform}"  enctype="multipart/form-data" th:object="${pickupobj}" method="post">
+			<h2>Pickup Data</h2>
+			<label>product id</label>
+			<input type="number" name="id">
+			<label>productname</label><br> <input type="text"
+				placeholder="enter the product name" name="productname" required><br>
+			<label>Item Type</label><br> <input type="text"
+				placeholder="enter the itemtype" name="itemtype"><br> <label>Damage
+				Persentage</label><br> <input type="text"
+				placeholder="enter the damagepersentage" name="damagepersentage"
+				required> <br>
+			<br> <label>Pickup Date</label><br> <input type="date"
+				placeholder="enter the pickupdate" name="pickupdate" required>
+			<br>
+			<br> <label>Product Descriptiom</label><br> <input
+				type="text" placeholder="enter the description" name="description"
+				required> <br>
+			<br> <label>uplode photo</label><br> <input type="file"
+				placeholder="uplode photo" name="photo" required><br> <br>
+			<br>
+			<input type="submit" value="submit">
+
+			
+		</form>
+	</div>
+</body>
+</html>

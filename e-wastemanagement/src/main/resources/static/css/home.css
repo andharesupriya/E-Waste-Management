@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+.mainSection
+	{
+	background-color:pink;
+	height:130px;
+	width: 100%;
+	
+	}
+
+	.navbar
+	{
+		list-style-type:none;
+	}
+
+	ul
+	{
+		text-align: right;
+		list-style:none;
+	  
+		margin:0;
+		padding:0;
+		display:flex;
+		justify-content: space-between;
+	  }
+		
+		ul a{
+			color: chocolate;
+		}
+	
+
+
+
+	.h1
+	{
+		color:burlywood;
+		text-align:center; 
+		padding-top:20px;
+	}
+
+	.middleSection
+	{
+		background-color:white;
+		height:850px auto;
+		width: 100%;
+		color: black;
+		
+	}
+	
+
+
+	.bottomSection
+{		background-color:black;
+		height:200px auto;
+		width: 100%;
+	}
+	div{color:white}

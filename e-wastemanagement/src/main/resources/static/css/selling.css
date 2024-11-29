@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+/* Popular Devices Section Styles */
+#popular-devices {
+  background-color: #f7f7f7;
+  padding: 50px 0;
+}
+
+.device-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.device {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.device img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.device h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.device p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.device button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.device button:hover {
+  background-color: #3e8e41;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .device-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .device-grid {
+    grid-template-columns: 1fr;
+  }
+
+}

@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.heading{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+/* Page Layout */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+
+
+p {
+    color: #34495e;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Image Styling */
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* List Styling */
+ul {
+    text-align: left;
+    margin: 20px auto;
+    padding: 0;
+    list-style-type: disc;
+}
+
+ul li {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #2c3e50;
+}
+
+/* Footer Text */
+h2 {
+    margin-top: 40px;
+    font-size: 1.8rem;
+    color: #2980b9;
+}
+
+/* Why Choose Us Section */
+h3 {
+    font-size: 1.5rem;
+    color: #27ae60;
+    margin-bottom: 15px;
+}
+
+/* Adding Responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    ul li {
+        font-size: 0.9rem;
+        }
+}
