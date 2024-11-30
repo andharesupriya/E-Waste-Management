@@ -1,10 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" th:href="@{/css/Contact.css}">
 </head>
 <body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        
+        <div class="contact-info">
+            <div class="address">
+                <img src="img/lll.png" alt="Location Icon">
+                <h2>Address</h2>
+                <p>New Arts Commerce College,</p>
+                <p>Lal taki road,Ahilyanagr</p>
+                <p>-414001</p>
+            </div>
 
+            <div class="phone">
+                <img src="img/phone.png" alt="Phone Icon">
+                <h2>Phone</h2>
+                <p>9960197700</p>
+            </div>
+
+            <div class="email">
+                <img src="img/email.png" alt="Email Icon">
+                <h2>Email</h2>
+                <p>dreamweavers@gmail.com</p>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <h2>Send Message</h2>
+            <form>
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Type your message..." required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
 </body>
-</html>
